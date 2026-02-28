@@ -48,3 +48,12 @@ body {
   display: grid;
   gap: 8px;
 }
+
+.back {
+  text-decoration: none;
+  color: black;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
