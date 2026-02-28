@@ -5,8 +5,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #fff;
+  --foreground-color: #000;
+}
+
 body {
   font-family: "IBM Plex Mono", monospace;
+  background-color: var(--background-color); /* White background by default */
+  color: var(--foreground-color); /* Black text by default */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000;
+    --foreground-color: #fff;
+  }
 }
 
 .center {
@@ -31,7 +45,7 @@ body {
 
 .header-name-text {
   text-decoration: none;
-  color: black;
+  color: var(--foreground-color);
 }
 
 .header-name-text:hover {
@@ -51,9 +65,13 @@ body {
 
 .back {
   text-decoration: none;
-  color: black;
+  color: var(--foreground-color);
 }
 
 .back:hover {
   text-decoration: underline;
+}
+
+a {
+  color: var(--foreground-color);
 }
