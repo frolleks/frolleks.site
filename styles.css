@@ -34,7 +34,13 @@ body {
   margin-top: 1.5rem;
   display: grid;
   gap: 8px 0;
-  width: 80%;
+  width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 80%;
+  }
 }
 
 .header-name {
