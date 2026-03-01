@@ -23,14 +23,14 @@ body {
   }
 }
 
-.center {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-.card {
+.content {
   margin-top: 1.5rem;
   display: grid;
   gap: 8px 0;
